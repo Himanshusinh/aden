@@ -17,10 +17,9 @@ export default function Header() {
     <header className="site-header">
       <nav className="nav">
         <Link href="/" className="brand">
-          <div className="brand-mark" style={{ border: 'none' }}>
+          <div style={{ width: '150px', height: '55px', display: 'flex', alignItems: 'center' }}>
             <Logo className="w-full h-full text-[#2B3A4A]" />
           </div>
-          <span className="text-xl tracking-wide font-medium">ADEN</span>
         </Link>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li><Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link></li>
@@ -30,9 +29,9 @@ export default function Header() {
           <li><Link href="/inquiry" className={pathname === "/inquiry" ? "active" : ""}>Inquiry</Link></li>
           <li><Link href="/contact" className={`nav-cta ${pathname === "/contact" ? "active" : ""}`}>Contact Us</Link></li>
         </ul>
-        <button 
-          className="nav-toggle" 
-          aria-label="Toggle menu" 
+        <button
+          className="nav-toggle"
+          aria-label="Toggle menu"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span></span><span></span><span></span>
