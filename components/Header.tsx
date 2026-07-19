@@ -18,7 +18,7 @@ export default function Header() {
       <nav className="nav">
         <Link href="/" className="brand">
           <div style={{ width: '150px', height: '55px', display: 'flex', alignItems: 'center' }}>
-            <Logo className="w-full h-full text-[#2B3A4A]" />
+            <img src="/logo.png" alt="ADEN Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'invert(1)' }} />
           </div>
         </Link>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
