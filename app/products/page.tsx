@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ImageSlider from "../../components/ImageSlider";
 
 export default function Products() {
   return (
@@ -137,7 +138,7 @@ export default function Products() {
                 </div>
               </div>
               <div>
-                <div className="photo-slot" style={{ marginBottom: "18px" }}>Product photo — Bag-Lifting SS<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+                <ImageSlider images={["/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png", "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel)2.png"]} altPrefix="Bag-Lifting SS" />
                 <div className="eyebrow">Technical data</div>
                 <table className="spec-table">
                   <tbody>
@@ -181,7 +182,7 @@ export default function Products() {
                 </div>
               </div>
               <div>
-                <div className="photo-slot" style={{ marginBottom: "18px" }}>Product photo — Bag-Lifting RL<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+                <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png" alt="Bag-Lifting RL" className="product-image" />
                 <div className="eyebrow">Technical data</div>
                 <table className="spec-table">
                   <tbody>

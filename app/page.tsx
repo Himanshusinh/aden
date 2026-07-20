@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Home() {
   return (
@@ -77,14 +78,14 @@ export default function Home() {
             </div>
             <div className="card">
               <div className="index">03 / Bag-Lifting SS</div>
-              <div className="photo-slot">Product photo —<br />Bag-Lifting (SS)<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+              <ImageSlider images={["/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png", "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel)2.png"]} altPrefix="Bag-Lifting SS" />
               <h3>Bag-Lifting Top Discharge Centrifuge (Stainless Steel)</h3>
               <p>Efficient top-discharge centrifuge with bag-lifting mechanism for quick cake removal, built in stainless steel for clean operations.</p>
               <Link href="/products#bag-lifting-ss" className="card-link">View datasheet</Link>
             </div>
             <div className="card">
               <div className="index">04 / Bag-Lifting RL</div>
-              <div className="photo-slot">Product photo —<br />Bag-Lifting (RL)<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png" alt="Bag-Lifting RL" className="product-image" />
               <h3>Bag-Lifting Top Discharge Centrifuge (Rubber-Lined)</h3>
               <p>Corrosion-resistant rubber-lined centrifuge featuring a bag-lifting mechanism for safe and rapid extraction of highly corrosive media.</p>
               <Link href="/products#bag-lifting-rl" className="card-link">View datasheet</Link>
