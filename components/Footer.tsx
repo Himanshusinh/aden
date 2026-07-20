@@ -12,19 +12,26 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4>Navigate</h4>
+            <h4>Company</h4>
             <Link href="/company">Company</Link>
             <Link href="/products">Products</Link>
             <Link href="/services">Services</Link>
           </div>
           <div>
-            <h4>Get in touch</h4>
-            <Link href="/inquiry">Submit an Inquiry</Link>
-            <Link href="/contact">Contact Us</Link>
+            <h4>Resources</h4>
+            <Link href="/gallery">Gallery</Link>
+            <Link href="/clients">Clients &amp; Reach</Link>
+            <Link href="/certifications">Certifications</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/faq">FAQ</Link>
+            <Link href="/careers">Careers</Link>
           </div>
           <div>
-            <h4>Works</h4>
-            <Link href="/contact">Plot No. 329, Phase I, G.I.D.C., Naroda, Ahmedabad – 382330</Link>
+            <h4>Legal &amp; Contact</h4>
+            <Link href="/contact">Contact Us</Link>
+            <Link href="/terms">Terms &amp; Conditions</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/sitemap">Sitemap</Link>
           </div>
         </div>
         <div className="footer-bottom">

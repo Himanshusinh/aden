@@ -7,14 +7,23 @@ import Logo from "./Logo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="site-header">
+    <header className={`site-header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="nav">
         <Link href="/" className="brand">
           <div style={{ width: '150px', height: '55px', display: 'flex', alignItems: 'center' }}>
@@ -26,7 +35,8 @@ export default function Header() {
           <li><Link href="/company" className={pathname === "/company" ? "active" : ""}>Company</Link></li>
           <li><Link href="/products" className={pathname === "/products" ? "active" : ""}>Products</Link></li>
           <li><Link href="/services" className={pathname === "/services" ? "active" : ""}>Services</Link></li>
-          <li><Link href="/inquiry" className={pathname === "/inquiry" ? "active" : ""}>Inquiry</Link></li>
+          <li><Link href="/gallery" className={pathname === "/gallery" ? "active" : ""}>Gallery</Link></li>
+          <li><Link href="/blog" className={pathname === "/blog" ? "active" : ""}>Blog</Link></li>
           <li><Link href="/contact" className={`nav-cta ${pathname === "/contact" ? "active" : ""}`}>Contact Us</Link></li>
         </ul>
         <button

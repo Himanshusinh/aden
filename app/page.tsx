@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ImageSlider from "../components/ImageSlider";
+import HeroSlider from "../components/HeroSlider";
 
 export default function Home() {
   return (
@@ -13,23 +14,44 @@ export default function Home() {
               <p className="hero-sub">ADEN designs and manufactures centrifuges and process pumps for pharmaceutical, chemical, textile and food manufacturers who cannot afford downtime. Every machine leaves our works floor tested against its own datasheet.</p>
               <div className="hero-actions">
                 <Link href="/products" className="btn btn-solid">View Product Range</Link>
-                <Link href="/inquiry" className="btn">Request a Quotation</Link>
+                <Link href="/contact" className="btn">Request a Quotation</Link>
               </div>
             </div>
-            <div className="title-block reveal" style={{ justifySelf: "end" }}>
-              <div className="tb-row">
-                <div className="tb-cell"><span className="tb-label">Manufacturer</span>ADEN</div>
+            <div className="hero-visual reveal" style={{ justifySelf: "end", width: "100%", maxWidth: "520px" }}>
+              <div style={{ position: "relative", marginBottom: "20px" }}>
+                <HeroSlider slides={[
+                  { 
+                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png", 
+                    title: "Stainless Steel Construction", 
+                    subtitle: "Bag-Lifting Discharge" 
+                  },
+                  { 
+                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel)2.png", 
+                    title: "High Throughput Extraction", 
+                    subtitle: "Continuous Duty" 
+                  },
+                  { 
+                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png", 
+                    title: "Corrosion Resistant Rubber-Lined", 
+                    subtitle: "Acid & Alkali Ready" 
+                  }
+                ]} />
               </div>
-              <div className="tb-row">
-                <div className="tb-cell"><span className="tb-label">Product Class</span>Centrifuges</div>
-                <div className="tb-cell"><span className="tb-label">&amp;</span>Process Pumps</div>
-              </div>
-              <div className="tb-row">
-                <div className="tb-cell"><span className="tb-label">Est.</span>1990</div>
-                <div className="tb-cell"><span className="tb-label">Origin</span>Ahmedabad, IN</div>
-              </div>
-              <div className="tb-row">
-                <div className="tb-cell"><span className="tb-label">Standard</span>Built to order spec.</div>
+              <div className="title-block" style={{ maxWidth: "100%" }}>
+                <div className="tb-row">
+                  <div className="tb-cell"><span className="tb-label">Manufacturer</span>ADEN</div>
+                </div>
+                <div className="tb-row">
+                  <div className="tb-cell"><span className="tb-label">Product Class</span>Centrifuges</div>
+                  <div className="tb-cell"><span className="tb-label">&amp;</span>Process Pumps</div>
+                </div>
+                <div className="tb-row">
+                  <div className="tb-cell"><span className="tb-label">Est.</span>1990</div>
+                  <div className="tb-cell"><span className="tb-label">Origin</span>Ahmedabad, IN</div>
+                </div>
+                <div className="tb-row">
+                  <div className="tb-cell"><span className="tb-label">Standard</span>Built to order spec.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -143,7 +165,7 @@ export default function Home() {
           <div className="eyebrow" style={{ justifyContent: "center", color: "var(--silver)" }}>Next step</div>
           <h2 style={{ color: "var(--white)", maxWidth: "24ch", margin: "0 auto 16px" }}>Tell us what you need to separate, pump or process.</h2>
           <p style={{ color: "var(--silver)", opacity: 0.8, maxWidth: "48ch", margin: "0 auto 28px" }}>Send us your process parameters and we'll size the right centrifuge or pump for your application.</p>
-          <Link href="/inquiry" className="btn btn-amber" style={{ background: "transparent" }}>Submit an Inquiry</Link>
+          <Link href="/contact" className="btn btn-amber" style={{ background: "transparent" }}>Submit an Inquiry</Link>
         </div>
       </section>
     </main>

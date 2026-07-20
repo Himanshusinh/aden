@@ -1,6 +1,18 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Contact() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const note = document.getElementById("form-note");
+    if (note) {
+      note.textContent = "Thank you — your enquiry has been noted. Our engineering team will respond within one business day.";
+      note.style.display = "block";
+    }
+    e.currentTarget.reset();
+  };
+
   return (
     <main>
       <section className="page-banner">
@@ -43,9 +55,59 @@ export default function Contact() {
       </section>
 
       <section style={{ background: "var(--white)", borderTop: "1px solid var(--silver)", borderBottom: "1px solid var(--silver)" }}>
-        <div className="container">
-          <div className="eyebrow reveal">Location</div>
-          <div className="reveal" style={{ border: "1px solid var(--silver)", aspectRatio: "16/6", width: "100%" }}>
+        <div className="container two-col" style={{ alignItems: "start" }}>
+          <form id="inquiry-form" className="reveal" onSubmit={handleSubmit} style={{ padding: "20px 0" }}>
+            <div className="eyebrow">Send an Inquiry</div>
+            <h2 style={{ marginBottom: "24px" }}>Submit process details for a sized recommendation.</h2>
+            <div className="form-grid">
+              <div className="field">
+                <label htmlFor="name">Full name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div className="field">
+                <label htmlFor="company">Company name</label>
+                <input type="text" id="company" name="company" required />
+              </div>
+              <div className="field">
+                <label htmlFor="email">Email address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div className="field">
+                <label htmlFor="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div className="field">
+                <label htmlFor="product">Product of interest</label>
+                <select id="product" name="product">
+                  <option>Manual Top Discharge Centrifuge (Stainless Steel)</option>
+                  <option>Manual Top Discharge Centrifuge (Rubber-Lined)</option>
+                  <option>Bag-Lifting Top Discharge Centrifuge (Stainless Steel)</option>
+                  <option>Bag-Lifting Top Discharge Centrifuge (Rubber-Lined)</option>
+                  <option>Not sure — need a recommendation</option>
+                </select>
+              </div>
+              <div className="field">
+                <label htmlFor="industry">Industry</label>
+                <select id="industry" name="industry">
+                  <option>Pharmaceutical</option>
+                  <option>Chemical</option>
+                  <option>Textile</option>
+                  <option>Food processing</option>
+                  <option>Water treatment</option>
+                  <option>Steel plant</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div className="field full">
+                <label htmlFor="message">Process details / requirement</label>
+                <textarea id="message" name="message" placeholder="Media to be handled, required throughput or discharge rate, batch or continuous operation, existing basket/impeller size if replacing an old unit, plant location, etc." required></textarea>
+              </div>
+            </div>
+            <button type="submit" className="btn btn-solid" style={{ marginTop: "20px" }}>Send Inquiry</button>
+            <p id="form-note" style={{ display: "none", marginTop: "14px", fontSize: "14px", color: "var(--steel)" }}></p>
+          </form>
+
+          <div className="reveal" style={{ border: "1px solid var(--silver)", height: "100%", width: "100%", minHeight: "400px" }}>
             <iframe
               title="ADEN, Naroda GIDC, Ahmedabad"
               src="https://www.google.com/maps?q=G.I.D.C.+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
@@ -53,14 +115,6 @@ export default function Contact() {
               loading="lazy" referrerPolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
-        </div>
-      </section>
-
-      <section style={{ textAlign: "center" }}>
-        <div className="container">
-          <div className="eyebrow" style={{ justifyContent: "center" }}>Prefer to write in?</div>
-          <h2 style={{ maxWidth: "24ch", margin: "0 auto 16px" }}>Send your process details and we&apos;ll size the right machine.</h2>
-          <Link href="/inquiry" className="btn btn-solid">Submit an Inquiry</Link>
         </div>
       </section>
     </main>

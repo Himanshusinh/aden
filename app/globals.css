@@ -119,11 +119,19 @@ section {
    HEADER / NAV
    ========================================================= */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
-  background: rgba(244, 245, 243, .92);
-  backdrop-filter: blur(6px);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(244, 245, 243, 0.95);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--silver);
 }
 
@@ -298,7 +306,7 @@ section {
    ========================================================= */
 .hero {
   position: relative;
-  padding-top: 96px;
+  padding-top: 128px;
   padding-bottom: 64px;
   background-image:
     linear-gradient(var(--silver) 1px, transparent 1px),
@@ -804,7 +812,7 @@ section {
    MISC — reveal on scroll, breadcrumb, page banner
    ========================================================= */
 .page-banner {
-  padding: 56px 0 40px;
+  padding: 128px 0 40px;
   border-bottom: 1px solid var(--silver);
   background: var(--silver-soft);
 }
