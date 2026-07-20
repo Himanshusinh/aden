@@ -55,8 +55,8 @@ export default function Contact() {
       </section>
 
       <section style={{ background: "var(--white)", borderTop: "1px solid var(--silver)", borderBottom: "1px solid var(--silver)" }}>
-        <div className="container two-col" style={{ alignItems: "start" }}>
-          <form id="inquiry-form" className="reveal" onSubmit={handleSubmit} style={{ padding: "20px 0" }}>
+        <div className="container">
+          <form id="inquiry-form" className="reveal" onSubmit={handleSubmit} style={{ padding: "20px 0", maxWidth: "860px", margin: "0 auto" }}>
             <div className="eyebrow">Send an Inquiry</div>
             <h2 style={{ marginBottom: "24px" }}>Submit process details for a sized recommendation.</h2>
             <div className="form-grid">
@@ -107,13 +107,16 @@ export default function Contact() {
             <p id="form-note" style={{ display: "none", marginTop: "14px", fontSize: "14px", color: "var(--steel)" }}></p>
           </form>
 
-          <div className="reveal" style={{ border: "1px solid var(--silver)", height: "100%", width: "100%", minHeight: "400px" }}>
-            <iframe
-              title="ADEN, Naroda GIDC, Ahmedabad"
-              src="https://www.google.com/maps?q=G.I.D.C.+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
-              width="100%" height="100%" style={{ border: 0, display: "block" }}
-              loading="lazy" referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+          <div className="reveal" style={{ marginTop: "60px" }}>
+            <div className="eyebrow">Location</div>
+            <div style={{ border: "1px solid var(--silver)", width: "100%", height: "400px" }}>
+              <iframe
+                title="ADEN, Naroda GIDC, Ahmedabad"
+                src="https://www.google.com/maps?q=G.I.D.C.+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
+                width="100%" height="100%" style={{ border: 0, display: "block" }}
+                loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
       </section>
