@@ -71,27 +71,27 @@ export default function Company() {
           </div>
           <div className="grid-3 reveal">
             <div className="card">
-              <div className="photo-slot" style={{ aspectRatio: "1/1" }}>Photo —<br />Managing Director<br /><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/WhatsApp%20Image%202026-07-20%20at%206.25.12%20PM.jpeg" alt="Bharat M. Patel" style={{ width: "100%", aspectRatio: "1/1", objectFit: "cover", objectPosition: "center 15%", border: "1px solid var(--silver)", marginBottom: "14px", display: "block" }} />
               <h3>Bharat M. Patel</h3>
               <p>Managing Director</p>
             </div>
             <div className="card">
-              <div className="photo-slot" style={{ aspectRatio: "1/1" }}>Photo —<br />Sales Engineer<br /><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/WhatsApp%20Image%202026-07-20%20at%206.25.12%20PM.jpeg" alt="Kanu V. Patel" style={{ width: "100%", aspectRatio: "1/1", objectFit: "cover", objectPosition: "center 15%", border: "1px solid var(--silver)", marginBottom: "14px", display: "block" }} />
               <h3>Kanu V. Patel</h3>
               <p>Sales Engineer</p>
             </div>
             <div className="card">
-              <div className="photo-slot" style={{ aspectRatio: "1/1" }}>Photo —<br />Chief Engineer<br /><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/WhatsApp%20Image%202026-07-20%20at%206.25.12%20PM.jpeg" alt="Joysan Victor" style={{ width: "100%", aspectRatio: "1/1", objectFit: "cover", objectPosition: "center 15%", border: "1px solid var(--silver)", marginBottom: "14px", display: "block" }} />
               <h3>Joysan Victor</h3>
               <p>Chief Engineer</p>
             </div>
             <div className="card">
-              <div className="photo-slot" style={{ aspectRatio: "1/1" }}>Photo —<br />Production Head<br /><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/WhatsApp%20Image%202026-07-20%20at%206.25.12%20PM.jpeg" alt="Hemchand" style={{ width: "100%", aspectRatio: "1/1", objectFit: "cover", objectPosition: "center 15%", border: "1px solid var(--silver)", marginBottom: "14px", display: "block" }} />
               <h3>Hemchand</h3>
               <p>Production Head</p>
             </div>
             <div className="card">
-              <div className="photo-slot" style={{ aspectRatio: "1/1" }}>Photo —<br />QC Head<br /><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/WhatsApp%20Image%202026-07-20%20at%206.25.12%20PM.jpeg" alt="Raju Panchal" style={{ width: "100%", aspectRatio: "1/1", objectFit: "cover", objectPosition: "center 15%", border: "1px solid var(--silver)", marginBottom: "14px", display: "block" }} />
               <h3>Raju Panchal</h3>
               <p>Quality Control Head</p>
             </div>
@@ -99,7 +99,7 @@ export default function Company() {
               <div className="index">Join us</div>
               <h3>Work with our engineering team</h3>
               <p>Have a separation or pumping problem that needs a proper look? Talk to us directly.</p>
-              <Link href="/inquiry" className="card-link">Start an inquiry</Link>
+              <Link href="/contact" className="card-link">Start an inquiry</Link>
             </div>
           </div>
         </div>

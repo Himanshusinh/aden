@@ -86,14 +86,14 @@ export default function Home() {
           <div className="grid-2 reveal">
             <div className="card">
               <div className="index">01 / Manual SS</div>
-              <div className="photo-slot">Product photo —<br />Manual Top Discharge (SS)<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png" alt="Manual Top Discharge SS" className="product-image" />
               <h3>Manual Top Discharge Centrifuge (Stainless Steel)</h3>
               <p>Top-discharge, bottom-driven hydro extractor with stainless steel construction, built for chemical, pharmaceutical, textile and food processing.</p>
               <Link href="/products#manual-ss" className="card-link">View datasheet</Link>
             </div>
             <div className="card">
               <div className="index">02 / Manual RL</div>
-              <div className="photo-slot">Product photo —<br />Manual Top Discharge (RL)<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png" alt="Manual Top Discharge RL" className="product-image" />
               <h3>Manual Top Discharge Centrifuge (Rubber-Lined)</h3>
               <p>Top-discharge centrifuge with rubber-lined construction for continuous duty on corrosive acidic and alkaline chemicals.</p>
               <Link href="/products#manual-rl" className="card-link">View datasheet</Link>

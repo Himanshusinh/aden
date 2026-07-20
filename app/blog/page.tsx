@@ -21,28 +21,28 @@ export default function Blog() {
           </div>
           <div className="grid-2 reveal">
             <div className="blog-card card">
-              <div className="photo-slot">Blog cover image<br/><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png" alt="Blog cover" className="product-image" />
               <div className="blog-meta index" style={{ marginTop: "14px" }}>Process Notes</div>
               <h3>Choosing Between Top Discharge and Bottom Discharge Centrifuges</h3>
               <p>How duty cycle, cake handling and cleanroom requirements should drive the choice between top and bottom discharge basket centrifuges.</p>
               <Link href="/contact" className="card-link">Ask us about this</Link>
             </div>
             <div className="blog-card card">
-              <div className="photo-slot">Blog cover image<br/><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png" alt="Blog cover" className="product-image" />
               <div className="blog-meta index" style={{ marginTop: "14px" }}>Materials</div>
               <h3>Why Material of Construction Matters More Than Basket Size</h3>
               <p>Stainless steel, MSRL, polypropylene or rubber-lined — getting the wrong material on a corrosive duty costs more than undersizing the basket.</p>
               <Link href="/contact" className="card-link">Ask us about this</Link>
             </div>
             <div className="blog-card card">
-              <div className="photo-slot">Blog cover image<br/><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel)2.png" alt="Blog cover" className="product-image" />
               <div className="blog-meta index" style={{ marginTop: "14px" }}>Technical</div>
               <h3>Reading a Centrifuge Datasheet: What the Numbers Actually Mean</h3>
               <p>Filtration area, wash efficiency and solids recovery, explained in plant terms rather than catalogue jargon.</p>
               <Link href="/contact" className="card-link">Ask us about this</Link>
             </div>
             <div className="blog-card card">
-              <div className="photo-slot">Blog cover image<br/><span style={{ opacity: 0.6 }}>(add when supplied)</span></div>
+              <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png" alt="Blog cover" className="product-image" />
               <div className="blog-meta index" style={{ marginTop: "14px" }}>Maintenance</div>
               <h3>Planned Maintenance Windows for Batch Centrifuges</h3>
               <p>A practical checklist for keeping unplanned downtime short on service-friendly basket centrifuges.</p>

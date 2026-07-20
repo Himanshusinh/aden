@@ -586,7 +586,7 @@ section {
 .product-image {
   aspect-ratio: 4/3;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   background: var(--white);
   border: 1px solid var(--silver);
   margin-bottom: 18px;

@@ -47,7 +47,7 @@ export default function Products() {
                 </div>
               </div>
               <div>
-                <div className="photo-slot" style={{ marginBottom: "18px" }}>Product photo — Manual SS<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+                <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png" alt="Manual SS" className="product-image" style={{ marginBottom: "18px" }} />
                 <div className="eyebrow">Technical data</div>
                 <table className="spec-table">
                   <tbody>
@@ -91,7 +91,7 @@ export default function Products() {
                 </div>
               </div>
               <div>
-                <div className="photo-slot" style={{ marginBottom: "18px" }}>Product photo — Manual RL<br /><span style={{ opacity: 0.6 }}>(add image when supplied)</span></div>
+                <img src="/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png" alt="Manual RL" className="product-image" style={{ marginBottom: "18px" }} />
                 <div className="eyebrow">Technical data</div>
                 <table className="spec-table">
                   <tbody>
@@ -202,7 +202,7 @@ export default function Products() {
         <div className="container" style={{ textAlign: "center" }}>
           <div className="eyebrow" style={{ justifyContent: "center", color: "var(--silver)" }}>Need a size not listed here?</div>
           <h2 style={{ color: "var(--white)", maxWidth: "26ch", margin: "0 auto 16px" }}>Send us your process parameters and we'll spec the right machine.</h2>
-          <Link href="/inquiry" className="btn btn-amber" style={{ background: "transparent" }}>Submit an Inquiry</Link>
+          <Link href="/contact" className="btn btn-amber" style={{ background: "transparent" }}>Submit an Inquiry</Link>
         </div>
       </section>
     </main>
