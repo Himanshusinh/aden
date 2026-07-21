@@ -19,20 +19,9 @@ export default function Company() {
             <p>At the beginning of most separation problems sits a question of process, not just equipment. Analysing that problem and matching it to the right process technology takes long experience in plant and machinery. ADEN has answered that question for manufacturers for more than three decades.</p>
             <p>Since 1990, ADEN has delivered over 7,000 centrifuges and pumps to customers in more than 15 countries — equipment specified into pharmaceutical, chemical, textile and food-processing plants that depend on it running shift after shift.</p>
           </div>
-          <div className="title-block reveal" style={{ maxWidth: "none" }}>
-            <div className="tb-row">
-              <div className="tb-cell"><span className="tb-label">Founded</span>1990</div>
-              <div className="tb-cell"><span className="tb-label">Location</span>Naroda GIDC, Ahmedabad</div>
-            </div>
-            <div className="tb-row">
-              <div className="tb-cell"><span className="tb-label">Scope</span>Mechanical &amp; thermal solid/liquid separation</div>
-            </div>
-            <div className="tb-row">
-              <div className="tb-cell"><span className="tb-label">Delivered</span>7,000+ units</div>
-              <div className="tb-cell"><span className="tb-label">Reach</span>15+ countries</div>
-            </div>
-            <div className="tb-row">
-              <div className="tb-cell"><span className="tb-label">Support</span>Consultation → Commissioning → After-sales</div>
+          <div className="reveal" style={{ justifySelf: "end", display: "flex", justifyContent: "center", width: "100%" }}>
+            <div style={{ border: "1px solid var(--silver)", padding: "12px", background: "var(--white)", display: "inline-block" }}>
+              <img src="/company-profile.png" alt="ADEN facility and equipment" style={{ maxHeight: "480px", width: "auto", maxWidth: "100%", display: "block", objectFit: "contain" }} />
             </div>
           </div>
         </div>

@@ -6,7 +6,14 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h4>ADEN</h4>
+            <Link href="/" className="brand" style={{ display: "inline-flex", flexDirection: "column", alignItems: "flex-start", textDecoration: "none", marginBottom: "16px" }}>
+              <div style={{ width: '130px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+                <img src="/logo.png" alt="ADEN Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'left center', filter: 'brightness(0) invert(1)' }} />
+              </div>
+              <span style={{ fontFamily: "var(--font-display)", fontWeight: "800", fontSize: "11px", letterSpacing: "0.15em", color: "#ffffff", textTransform: "uppercase", lineHeight: "1", marginTop: "-8px" }}>
+                A.D.Engineers
+              </span>
+            </Link>
             <p style={{ fontSize: "13.5px", opacity: 0.8, maxWidth: "32ch" }}>
               Centrifuges and process pumps engineered and manufactured in Ahmedabad, India since 1990.
             </p>

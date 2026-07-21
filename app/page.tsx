@@ -22,7 +22,7 @@ export default function Home() {
               <div style={{ position: "relative", marginBottom: "20px" }}>
                 <HeroSlider slides={[
                   {
-                    src: "/file_000000008c708207bc3aa587fba78b0d.png",
+                    src: "/company-profile.png",
                     title: "Precision Separation Engineering",
                     subtitle: "Heavy Industrial Duty"
                   },
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
           <div className="reveal" style={{ justifySelf: "end", display: "flex", justifyContent: "center", width: "100%" }}>
             <div style={{ border: "1px solid var(--silver)", padding: "12px", background: "var(--white)", display: "inline-block" }}>
-              <img src="/file_000000008c708207bc3aa587fba78b0d.png" alt="Industrial Centrifuge Equipment" style={{ maxHeight: "440px", width: "auto", maxWidth: "100%", display: "block", objectFit: "contain" }} />
+              <img src="/company-profile.png" alt="Industrial Centrifuge Equipment" style={{ maxHeight: "440px", width: "auto", maxWidth: "100%", display: "block", objectFit: "contain" }} />
             </div>
           </div>
         </div>
