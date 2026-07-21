@@ -20,20 +20,25 @@ export default function Home() {
             <div className="hero-visual reveal" style={{ justifySelf: "end", width: "100%", maxWidth: "520px" }}>
               <div style={{ position: "relative", marginBottom: "20px" }}>
                 <HeroSlider slides={[
-                  { 
-                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png", 
-                    title: "Stainless Steel Construction", 
-                    subtitle: "Bag-Lifting Discharge" 
+                  {
+                    src: "/file_000000008c708207bc3aa587fba78b0d.png",
+                    title: "Precision Separation Engineering",
+                    subtitle: "Heavy Industrial Duty"
                   },
-                  { 
-                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel)2.png", 
-                    title: "High Throughput Extraction", 
-                    subtitle: "Continuous Duty" 
+                  {
+                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel).png",
+                    title: "Stainless Steel Construction",
+                    subtitle: "Bag-Lifting Discharge"
                   },
-                  { 
-                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png", 
-                    title: "Corrosion Resistant Rubber-Lined", 
-                    subtitle: "Acid & Alkali Ready" 
+                  {
+                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Stainless%20Steel)2.png",
+                    title: "High Throughput Extraction",
+                    subtitle: "Continuous Duty"
+                  },
+                  {
+                    src: "/productimages/Bag-Lifting%20Top%20Discharge%20Centrifuge%20(Rubber-Lined).png",
+                    title: "Corrosion Resistant Rubber-Lined",
+                    subtitle: "Acid & Alkali Ready"
                   }
                 ]} />
               </div>
@@ -72,6 +77,26 @@ export default function Home() {
             <div className="stat">
               <div className="num">24<span className="amber">/7</span></div>
               <div className="label">Breakdown service line</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "var(--white)", borderTop: "1px solid var(--silver)", borderBottom: "1px solid var(--silver)" }}>
+        <div className="container two-col" style={{ alignItems: "center" }}>
+          <div className="reveal">
+            <div className="eyebrow">Engineering Excellence</div>
+            <h2>Built for demanding industrial separation environments.</h2>
+            <p style={{ color: "var(--steel-light)" }}>Heavy-duty construction engineered to handle continuous solid-liquid extraction with minimal downtime and maximum operational safety.</p>
+            <ul className="feature-list" style={{ marginTop: "16px" }}>
+              <li>Precision machined drive and basket assemblies</li>
+              <li>High-durability corrosion-resistant finishes</li>
+              <li>Custom mounting and discharge configurations</li>
+            </ul>
+          </div>
+          <div className="reveal" style={{ justifySelf: "end", display: "flex", justifyContent: "center", width: "100%" }}>
+            <div style={{ border: "1px solid var(--silver)", padding: "12px", background: "var(--white)", display: "inline-block" }}>
+              <img src="/file_000000008c708207bc3aa587fba78b0d.png" alt="Industrial Centrifuge Equipment" style={{ maxHeight: "440px", width: "auto", maxWidth: "100%", display: "block", objectFit: "contain" }} />
             </div>
           </div>
         </div>
