@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ImageSlider from "../components/ImageSlider";
 import HeroSlider from "../components/HeroSlider";
+import ClientLogo from "../components/ClientLogo";
 
 export default function Home() {
   return (
@@ -181,6 +182,144 @@ export default function Home() {
               <p>Our machines run in customer plants across more than 15 countries, backed by a 24/7 breakdown line from our Naroda, Ahmedabad works — for both mechanical and electrical/control system questions.</p>
               <Link href="/services" className="card-link">See our services</Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "var(--paper)", borderTop: "1px solid var(--silver)", borderBottom: "1px solid var(--silver)" }}>
+        <div className="container">
+          <div className="section-head reveal">
+            <div>
+              <div className="eyebrow">Valued Customers</div>
+              <h2>Trusted by leading chemical &amp; pharma manufacturers.</h2>
+            </div>
+            <p>A selection of valued industrial plants running ADEN centrifuges and pumps on active production floors.</p>
+          </div>
+
+          <div className="client-grid reveal">
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="bodal" name="Bodal Chemicals Ltd" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Vatva, Ahmedabad</span>
+                <span className="tag">Dyes &amp; Chemicals</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="meghmani" name="Meghmani Organics Ltd" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Vatva, Ahmedabad</span>
+                <span className="tag">Agro &amp; Organics</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="valiant" name="Valiant Organics Ltd" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Vatva, Ahmedabad</span>
+                <span className="tag">Specialty Chem</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="ambica" name="Ambica Industries" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Naroda, Ahmedabad</span>
+                <span className="tag">Process Chem</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="sagardrugs" name="Sagar Drugs & Pharma" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Singarwa, Ahmedabad</span>
+                <span className="tag">Pharma &amp; APIs</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="rksynthesis" name="R K Synthesis Ltd" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Naroda, Ahmedabad</span>
+                <span className="tag">Intermediates</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="chemieorganic" name="Chemie Organic Chemicals" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Jhagadia, Bharuch</span>
+                <span className="tag">Organic Chem</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="gopinath" name="Gopinath Chem Tech" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Ahmedabad, Gujarat</span>
+                <span className="tag">Fine Chemicals</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="kpinternational" name="K.P. International" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Dahej GIDC</span>
+                <span className="tag">Export Media</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="matangi" name="Matangi Industries" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Vatva, Ahmedabad</span>
+                <span className="tag">Performance</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="prima" name="Prima Chemicals" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Odhav, Ahmedabad</span>
+                <span className="tag">Dyestuffs</span>
+              </div>
+            </div>
+
+            <div className="client-card">
+              <div className="client-logo-badge">
+                <ClientLogo id="varahi" name="Varahi Intermediates" />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px" }}>
+                <span className="client-loc">Naroda, Ahmedabad</span>
+                <span className="tag">Chemical Duty</span>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ textAlign: "center", marginTop: "28px" }}>
+            <Link href="/clients" className="card-link">View all valued customer plants</Link>
           </div>
         </div>
       </section>

@@ -891,3 +891,79 @@ section {
   border: 1px solid var(--steel);
   padding: 6px 12px;
 }
+
+/* =========================================================
+   CLIENT LOGOS & CUSTOMER SHOWCASE
+   ========================================================= */
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .client-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.client-card {
+  background: var(--white);
+  border: 1px solid var(--silver);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.client-card:hover {
+  border-color: var(--steel);
+  box-shadow: 0 4px 12px rgba(43, 58, 74, 0.08);
+  transform: translateY(-2px);
+}
+
+.client-logo-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.client-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background: var(--silver-soft);
+  border: 1px solid var(--silver);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--steel);
+  flex-shrink: 0;
+}
+
+.client-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15.5px;
+  color: var(--steel);
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+
+.client-loc {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--steel-light);
+}
