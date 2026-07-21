@@ -10,15 +10,15 @@ export default function Home() {
         <div className="container">
           <div className="hero-grid">
             <div>
-              <div className="eyebrow">Centrifuges &amp; Pumps — Engineered in Ahmedabad</div>
+              <div className="eyebrow" style={{ textTransform: "uppercase", letterSpacing: "0.1em" }}>Centrifuges — Engineered in Ahmedabad</div>
               <h1>Solid-liquid separation equipment built for <em>continuous industrial duty.</em></h1>
-              <p className="hero-sub">ADEN designs and manufactures centrifuges and process pumps for pharmaceutical, chemical, textile and food manufacturers who cannot afford downtime. Every machine leaves our works floor tested against its own datasheet.</p>
+              <p className="hero-sub">ADEN designs and manufactures centrifuges for pharmaceutical, chemical, textile and food manufacturers who cannot afford downtime. Every machine leaves our works floor tested against its own datasheet.</p>
               <div className="hero-actions">
                 <Link href="/products" className="btn btn-solid">View Product Range</Link>
                 <Link href="/contact" className="btn">Request a Quotation</Link>
               </div>
             </div>
-            <div className="hero-visual reveal" style={{ justifySelf: "end", width: "100%", maxWidth: "520px" }}>
+            <div className="hero-visual reveal" style={{ justifySelf: "end", width: "100%" }}>
               <div style={{ position: "relative", marginBottom: "20px" }}>
                 <HeroSlider slides={[
                   {
@@ -46,10 +46,7 @@ export default function Home() {
               <div className="title-block" style={{ maxWidth: "100%" }}>
                 <div className="tb-row">
                   <div className="tb-cell"><span className="tb-label">Manufacturer</span>ADEN</div>
-                </div>
-                <div className="tb-row">
                   <div className="tb-cell"><span className="tb-label">Product Class</span>Centrifuges</div>
-                  <div className="tb-cell"><span className="tb-label">&amp;</span>Process Pumps</div>
                 </div>
                 <div className="tb-row">
                   <div className="tb-cell"><span className="tb-label">Est.</span>1990</div>
@@ -324,12 +321,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ background: "var(--graphite)", color: "var(--silver)" }}>
-        <div className="container" style={{ textAlign: "center" }}>
-          <div className="eyebrow" style={{ justifyContent: "center", color: "var(--silver)" }}>Next step</div>
-          <h2 style={{ color: "var(--white)", maxWidth: "24ch", margin: "0 auto 16px" }}>Tell us what you need to separate, pump or process.</h2>
-          <p style={{ color: "var(--silver)", opacity: 0.8, maxWidth: "48ch", margin: "0 auto 28px" }}>Send us your process parameters and we'll size the right centrifuge or pump for your application.</p>
-          <Link href="/contact" className="btn btn-amber" style={{ background: "transparent" }}>Submit an Inquiry</Link>
+      <section style={{ background: "var(--graphite)", color: "var(--silver)", padding: "64px 0" }}>
+        <div className="container">
+          <div style={{ textAlign: "center", marginBottom: "40px" }}>
+            <div className="eyebrow" style={{ justifyContent: "center", color: "var(--amber)" }}>Get In Touch</div>
+            <h2 style={{ color: "var(--white)", maxWidth: "24ch", margin: "0 auto 16px" }}>Tell us what you need to separate or process.</h2>
+            <p style={{ color: "var(--silver)", opacity: 0.8, maxWidth: "52ch", margin: "0 auto 24px" }}>
+              Send us your process parameters or visit our Naroda works floor in Ahmedabad. Our engineering team is ready to assist.
+            </p>
+            <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap", marginBottom: "32px" }}>
+              <Link href="/contact" className="btn btn-amber">Contact Us</Link>
+              <a href="tel:+919825172158" className="btn" style={{ color: "var(--white)", borderColor: "var(--silver)" }}>Call: +91 98251 72158</a>
+            </div>
+          </div>
+
+          <div style={{ border: "1px solid rgba(255, 255, 255, 0.15)", borderRadius: "4px", overflow: "hidden", height: "360px", width: "100%" }}>
+            <iframe
+              title="ADEN, Naroda GIDC, Ahmedabad"
+              src="https://www.google.com/maps?q=G.I.D.C.+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
+              width="100%" height="100%" style={{ border: 0, display: "block" }}
+              loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
