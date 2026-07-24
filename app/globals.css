@@ -5,19 +5,19 @@
 
 :root {
   /* --- Color tokens --- */
-  --graphite: #14181D;
-  /* near-black ink / primary text */
-  --steel: #2B3A4A;
-  /* primary brand — deep steel blue */
-  --steel-light: #4C6178;
-  /* secondary steel */
-  --silver: #C9CDD1;
-  /* machined aluminium — borders, rules */
-  --silver-soft: #E4E6E8;
-  /* light panel fill */
-  --amber: #D98E2B;
-  /* calibration amber — sparse accent only */
-  --paper: #F4F5F3;
+  --graphite: #1A1A1A;
+  /* dark gray / primary text */
+  --steel: #0A2540;
+  /* primary brand — navy blue */
+  --steel-light: #6B7280;
+  /* secondary gray */
+  --silver: #D1D5DB;
+  /* light gray — borders, rules */
+  --silver-soft: #F3F4F6;
+  /* very light gray panel fill */
+  --amber: #1D4ED8;
+  /* accent blue — buttons, highlights */
+  --paper: #F8FAFC;
   /* page background — cool off-white */
   --white: #FFFFFF;
 
@@ -77,6 +77,11 @@ h4 {
 
 p {
   margin: 0 0 1em;
+}
+
+.text-highlight {
+  color: var(--amber);
+  font-weight: 600;
 }
 
 .container {
@@ -349,7 +354,7 @@ section {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--steel);
+  color: var(--amber);
   border-bottom: 3px solid var(--amber);
 }
 

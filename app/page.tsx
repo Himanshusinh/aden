@@ -163,7 +163,7 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="section-head reveal">
-            <h2>Built on three decades of separation engineering</h2>
+            <h2>Built on three decades of <span className="text-highlight">separation engineering</span></h2>
             <p>Since 1990, ADEN has supplied centrifuges and pumps to customers across more than 15 countries — equipment still running on factory floors today.</p>
           </div>
           <div className="grid-2 reveal">
@@ -188,7 +188,7 @@ export default function Home() {
           <div className="section-head reveal">
             <div>
               <div className="eyebrow">Valued Customers</div>
-              <h2>Trusted by leading chemical &amp; pharma manufacturers.</h2>
+              <h2>Trusted by leading <span className="text-highlight">chemical &amp; pharma manufacturers.</span></h2>
             </div>
             <p>A selection of valued industrial plants running ADEN centrifuges and pumps on active production floors.</p>
           </div>

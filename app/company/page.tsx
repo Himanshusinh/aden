@@ -14,10 +14,10 @@ export default function Company() {
         <div className="container two-col">
           <div className="reveal">
             <div className="eyebrow">Who we are</div>
-            <p style={{ fontSize: "19px", color: "var(--steel)", fontFamily: "var(--font-display)", fontWeight: 500, lineHeight: 1.4 }}>ADEN provides innovative solutions in mechanical and thermal solid-liquid separation, offering centrifuges and pumps on a global basis.</p>
+            <p style={{ fontSize: "19px", color: "var(--steel)", fontFamily: "var(--font-display)", fontWeight: 500, lineHeight: 1.4 }}>ADEN provides innovative solutions in <span className="text-highlight">mechanical and thermal solid-liquid separation</span>, offering centrifuges and pumps on a global basis.</p>
             <p>We support our customers with effective, reliable and profitable process technology equipment. Our goal is an all-encompassing, professional service — starting at the initial consultation and continuing through installation, commissioning and after-sales support.</p>
-            <p>At the beginning of most separation problems sits a question of process, not just equipment. Analysing that problem and matching it to the right process technology takes long experience in plant and machinery. ADEN has answered that question for manufacturers for more than three decades.</p>
-            <p>Since 1990, ADEN has delivered over 7,000 centrifuges and pumps to customers in more than 15 countries — equipment specified into pharmaceutical, chemical, textile and food-processing plants that depend on it running shift after shift.</p>
+            <p>At the beginning of most separation problems sits a question of process, not just equipment. Analysing that problem and matching it to the right process technology takes long experience in plant and machinery. ADEN has answered that question for manufacturers for more than <span className="text-highlight">three decades</span>.</p>
+            <p>Since 1990, ADEN has delivered <span className="text-highlight">over 7,000 centrifuges and pumps</span> to customers in more than <span className="text-highlight">15 countries</span> — equipment specified into pharmaceutical, chemical, textile and food-processing plants that depend on it running shift after shift.</p>
           </div>
           <div className="reveal" style={{ justifySelf: "end", display: "flex", justifyContent: "center", width: "100%" }}>
             <div style={{ border: "1px solid var(--silver)", padding: "12px", background: "var(--white)", display: "inline-block" }}>

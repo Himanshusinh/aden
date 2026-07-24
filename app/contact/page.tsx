@@ -19,7 +19,7 @@ export default function Contact() {
         <div className="container">
           <div className="breadcrumb"><Link href="/">Home</Link> / Contact Us</div>
           <h1>Contact Us</h1>
-          <p style={{ maxWidth: "56ch", color: "var(--steel-light)", marginTop: "10px" }}>Reachable around the clock, 365 days a year, for process, mechanical, electrical and control-system questions.</p>
+          <p style={{ maxWidth: "56ch", color: "var(--steel-light)", marginTop: "10px" }}><span className="text-highlight">Reachable around the clock, 365 days a year</span>, for process, mechanical, electrical and control-system questions.</p>
         </div>
       </section>
 
@@ -48,8 +48,8 @@ export default function Contact() {
               <div className="tb-cell"><span className="tb-label">Mobile</span>+91 94280 46318</div>
             </div>
             <div className="tb-row"><div className="tb-cell"><span className="tb-label">Telefax</span>079 2281 8437</div></div>
-            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Email</span>aden66@ymail.com</div></div>
-            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Breakdown Call</span>079 2282 3263 — available 24/7, 365 days</div></div>
+            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Email</span><a href="mailto:aden66@ymail.com" className="text-highlight">aden66@ymail.com</a></div></div>
+            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Breakdown Call</span>079 2282 3263 — <span className="text-highlight">available 24/7, 365 days</span></div></div>
           </div>
         </div>
       </section>
