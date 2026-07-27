@@ -3,14 +3,62 @@
 import Link from "next/link";
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
     const note = document.getElementById("form-note");
     if (note) {
-      note.textContent = "Thank you — your enquiry has been noted. Our engineering team will respond within one business day.";
+      note.textContent = "Sending your inquiry...";
       note.style.display = "block";
+      note.style.color = "var(--steel)";
     }
-    e.currentTarget.reset();
+
+    const formattedBody = `Name: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nPhone: ${data.phone}\nProduct: ${data.product}\nIndustry: ${data.industry}\n\nRequirement Details:\n${data.message}`;
+
+    try {
+      // Using Web3Forms for clean, professional, ad-free emails without any form activation requirements
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          // Paste your free Access Key from https://web3forms.com below:
+          access_key: "b07332f4-e493-429e-970b-e829f03dd9fd",
+          subject: `Inquiry: ${data.product || "Process Equipment"} - ${data.company || data.name}`,
+          from_name: "ADEN Website Inquiry",
+          to_email: "info@adengineers.co.in",
+          name: data.name,
+          company: data.company,
+          email: data.email,
+          phone: data.phone,
+          product: data.product,
+          industry: data.industry,
+          message: data.message
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        if (note) {
+          note.textContent = "Thank you — your inquiry has been sent successfully to info@adengineers.co.in! Our engineering team will respond within one business day.";
+          note.style.color = "#15803d";
+        }
+        form.reset();
+      } else {
+        throw new Error("Web3Forms key not configured or submission failed");
+      }
+    } catch (error) {
+      if (note) {
+        note.innerHTML = `Could not send via background API. <a href="mailto:info@adengineers.co.in?subject=${encodeURIComponent(`Inquiry from ${data.name || 'Website'}`)}&body=${encodeURIComponent(formattedBody)}" style="color: var(--amber); text-decoration: underline; font-weight: 600;">Click here to send directly via your Email App</a>.`;
+        note.style.color = "var(--graphite)";
+      }
+    }
   };
 
   return (

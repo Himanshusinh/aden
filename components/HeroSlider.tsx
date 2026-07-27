@@ -91,7 +91,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
               transition: "all 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s",
             }}
           >
-            <div style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--amber)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "4px" }}>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--white)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "4px" }}>
               {slide.subtitle}
             </div>
             <h3 style={{ margin: 0, fontSize: "22px", color: "var(--white)", textShadow: "0 2px 4px rgba(0,0,0,0.5)" }}>
