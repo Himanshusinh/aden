@@ -63,48 +63,9 @@ export default function Contact() {
 
   return (
     <main>
-      <section className="page-banner">
+      <section style={{ background: "var(--white)", borderBottom: "1px solid var(--silver)", padding: "120px 0 40px" }}>
         <div className="container">
-          <div className="breadcrumb"><Link href="/">Home</Link> / Contact Us</div>
-          <h1>Contact Us</h1>
-          <p style={{ maxWidth: "56ch", color: "var(--steel-light)", marginTop: "10px" }}><span className="text-highlight">Reachable around the clock, 365 days a year</span>, for process, mechanical, electrical and control-system questions.</p>
-        </div>
-      </section>
-
-      <section>
-        <div className="container two-col" style={{ alignItems: "start" }}>
-          <div className="reveal">
-            <div className="eyebrow">Registered works</div>
-            <h2 style={{ maxWidth: "16ch" }}>ADEN</h2>
-            <p style={{ color: "var(--steel-light)", fontSize: "15.5px", maxWidth: "38ch" }}>
-              Plot No. 329, Phase I,<br />
-              Behind Lion&apos;s School,<br />
-              G.I.D.C., Naroda,<br />
-              Ahmedabad – 382330,<br />
-              Gujarat, India
-            </p>
-            <div className="badge-strip">
-              <span className="badge">Mon–Sat, Works Open</span>
-              <span className="badge">Breakdown line: 24/7</span>
-            </div>
-          </div>
-
-          <div className="title-block reveal" style={{ maxWidth: "none" }}>
-            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Tel</span>079 2282 3263</div></div>
-            <div className="tb-row">
-              <div className="tb-cell"><span className="tb-label">Mobile</span>+91 98251 72158</div>
-              <div className="tb-cell"><span className="tb-label">Mobile</span>+91 94280 46318</div>
-            </div>
-            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Telefax</span>079 2281 8437</div></div>
-            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Email</span><a href="mailto:aden66@ymail.com" className="text-highlight">aden66@ymail.com</a></div></div>
-            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Breakdown Call</span>079 2282 3263 — <span className="text-highlight">available 24/7, 365 days</span></div></div>
-          </div>
-        </div>
-      </section>
-
-      <section style={{ background: "var(--white)", borderTop: "1px solid var(--silver)", borderBottom: "1px solid var(--silver)" }}>
-        <div className="container">
-          <form id="inquiry-form" className="reveal" onSubmit={handleSubmit} style={{ padding: "20px 0", maxWidth: "860px", margin: "0 auto" }}>
+          <form id="inquiry-form" className="reveal" onSubmit={handleSubmit} style={{ maxWidth: "860px", margin: "0 auto" }}>
             <div className="eyebrow">Send an Inquiry</div>
             <h2 style={{ marginBottom: "24px" }}>Submit process details for a sized recommendation.</h2>
             <div className="form-grid">
@@ -154,17 +115,48 @@ export default function Contact() {
             <button type="submit" className="btn btn-solid" style={{ marginTop: "20px" }}>Send Inquiry</button>
             <p id="form-note" style={{ display: "none", marginTop: "14px", fontSize: "14px", color: "var(--steel)" }}></p>
           </form>
+        </div>
+      </section>
 
-          <div className="reveal" style={{ marginTop: "60px" }}>
-            <div className="eyebrow">Location</div>
-            <div style={{ border: "1px solid var(--silver)", width: "100%", height: "400px" }}>
-              <iframe
-                title="ADEN, Naroda GIDC, Ahmedabad"
-                src="https://www.google.com/maps?q=G.I.D.C.+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
-                width="100%" height="100%" style={{ border: 0, display: "block" }}
-                loading="lazy" referrerPolicy="no-referrer-when-downgrade">
-              </iframe>
+      <section>
+        <div className="container two-col" style={{ alignItems: "start" }}>
+          <div className="reveal">
+            <div className="eyebrow">Registered works</div>
+            <h2 style={{ maxWidth: "16ch" }}>ADEN</h2>
+            <p style={{ color: "var(--steel-light)", fontSize: "15.5px", maxWidth: "38ch" }}>
+              Plot No. 329, Phase I,<br />
+              Behind Lion&apos;s School,<br />
+              G.I.D.C., Naroda,<br />
+              Ahmedabad – 382330,<br />
+              Gujarat, India
+            </p>
+            <div className="badge-strip">
+              <span className="badge">Mon–Sat, Works Open</span>
+              <span className="badge">Breakdown line: 24/7</span>
             </div>
+          </div>
+
+          <div className="title-block reveal" style={{ maxWidth: "none" }}>
+            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Tel</span>079 2282 3263</div></div>
+            <div className="tb-row">
+              <div className="tb-cell"><span className="tb-label">Mobile</span>+91 98251 72158</div>
+              <div className="tb-cell"><span className="tb-label">Mobile</span>+91 94280 46318</div>
+            </div>
+            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Telefax</span>079 2281 8437</div></div>
+            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Email</span><a href="mailto:aden66@ymail.com" className="text-highlight">aden66@ymail.com</a></div></div>
+            <div className="tb-row"><div className="tb-cell"><span className="tb-label">Breakdown Call</span>079 2282 3263 — <span className="text-highlight">available 24/7, 365 days</span></div></div>
+          </div>
+        </div>
+
+        <div className="container reveal" style={{ marginTop: "60px" }}>
+          <div className="eyebrow">Location</div>
+          <div style={{ border: "1px solid var(--silver)", width: "100%", height: "400px" }}>
+            <iframe
+              title="ADEN, Naroda GIDC, Ahmedabad"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3670.2784465614277!2d72.66762157531576!3d23.086900679128718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDA1JzEyLjgiTiA3MsKwNDAnMTIuNyJF!5e0!3m2!1sen!2sin!4v1785147293536!5m2!1sen!2sin"
+              width="100%" height="100%" style={{ border: 0, display: "block" }}
+              allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin">
+            </iframe>
           </div>
         </div>
       </section>

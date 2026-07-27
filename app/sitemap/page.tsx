@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Sitemap | ADEN Industrial Centrifuges & Process Pumps Directory",
+  description: "Complete directory of ADEN website pages: explore centrifuge products, industrial pumps, engineering services, quality certifications, and client references.",
+  keywords: ["ADEN Sitemap", "Centrifuge Directory India", "Solid-Liquid Separation Products Map"]
+};
 
 export default function Sitemap() {
   return (

@@ -1,19 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Separation Engineering Blog | Centrifuge & Pump Selection Guides",
+  description: "Read practical engineering articles on industrial centrifuge selection, maintenance, metallurgy, and solid-liquid separation best practices from ADEN.",
+  keywords: [
+    "Centrifuge Selection Guide",
+    "Solid-Liquid Separation Articles",
+    "Stainless Steel vs Rubber Lined Centrifuge",
+    "Centrifuge Maintenance Tips",
+    "Industrial Pump Selection",
+    "Chemical Plant Equipment Blog",
+    "Pharmaceutical Separation Best Practices",
+    "ADEN Technical Blog"
+  ],
+  openGraph: {
+    title: "Separation Engineering Blog | ADEN Technical Notes",
+    description: "Practical notes on centrifuge and pump selection, materials and maintenance written by our engineering team.",
+    url: "https://www.adengineers.co.in/blog",
+  }
+};
 
 export default function Blog() {
   return (
     <main>
-      <section className="page-banner">
-        <div className="container">
-          <div className="breadcrumb"><Link href="/">Home</Link> / Blog</div>
-          <h1>Blog</h1>
-          <p style={{ maxWidth: "56ch", color: "var(--steel-light)", marginTop: "10px" }}>
-            Practical notes on centrifuge and pump selection, materials and maintenance — written by our engineering team.
-          </p>
-        </div>
-      </section>
-
-      <section>
+      <section style={{ paddingTop: "120px" }}>
         <div className="container">
           <div className="section-head reveal">
             <h2>Notes from the works floor</h2>

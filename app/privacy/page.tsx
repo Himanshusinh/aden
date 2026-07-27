@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Data Protection & Inquiry Security",
+  description: "Read ADEN's privacy policy regarding customer data protection, technical inquiry confidentiality, and industrial equipment specification security.",
+  keywords: ["ADEN Privacy Policy", "Customer Data Protection", "Chemical Equipment Confidentiality"],
+  robots: { index: false, follow: true }
+};
 
 export default function Privacy() {
   return (

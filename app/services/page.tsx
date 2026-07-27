@@ -1,17 +1,31 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Centrifuge Service & Support | 24/7 Breakdown Response, Spares & Commissioning",
+  description: "ADEN provides 24/7 breakdown support, on-site commissioning, preventative maintenance, process consultation, and genuine spare parts for industrial centrifuges and pumps.",
+  keywords: [
+    "Centrifuge Maintenance Services",
+    "24/7 Centrifuge Breakdown Support",
+    "Centrifuge Commissioning India",
+    "Industrial Centrifuge Spare Parts",
+    "Process Equipment Consultation",
+    "Centrifuge Repair Ahmedabad",
+    "Rubber-Lined Centrifuge Repair",
+    "Solid-Liquid Separation Support",
+    "ADEN After Sales Support"
+  ],
+  openGraph: {
+    title: "Centrifuge Service & Support | 24/7 Breakdown Response & Spares",
+    description: "Dedicated mechanical, electrical, and control-system support for continuous separation plants 365 days a year.",
+    url: "https://www.adengineers.co.in/services",
+  }
+};
 
 export default function Services() {
   return (
     <main>
-      <section className="page-banner">
-        <div className="container">
-          <div className="breadcrumb"><Link href="/">Home</Link> / Services</div>
-          <h1>Service &amp; Support</h1>
-          <p style={{ maxWidth: "56ch", color: "var(--steel-light)", marginTop: "10px" }}>Equipment sold is only half the job. ADEN stays reachable for the mechanical, electrical and control-system questions that come up long after commissioning.</p>
-        </div>
-      </section>
-
-      <section>
+      <section style={{ paddingTop: "120px" }}>
         <div className="container two-col">
           <div className="reveal">
             <div className="eyebrow">24/7 standby service</div>

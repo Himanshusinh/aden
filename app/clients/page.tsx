@@ -1,5 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ClientLogo from "../../components/ClientLogo";
+
+export const metadata: Metadata = {
+  title: "Clients & Global Reach | 7,000+ Centrifuges in 15+ Countries",
+  description: "Explore ADEN's global footprint and client references across chemical, pharmaceutical, textile, food processing, and wastewater treatment industries worldwide.",
+  keywords: [
+    "Centrifuge Exporter India",
+    "Chemical Plant Centrifuge Clients",
+    "Pharmaceutical Equipment Exporter",
+    "ADEN Global Reach",
+    "Solid-Liquid Separation Clients",
+    "Industrial Centrifuges Export",
+    "Top Discharge Centrifuge References",
+    "Centrifuge Supplier Gujarat"
+  ],
+  openGraph: {
+    title: "Clients & Global Reach | ADEN Industrial Equipment",
+    description: "Equipment delivered to customers across more than 15 countries, serving top pharmaceutical, chemical, textile, and food plants.",
+    url: "https://www.adengineers.co.in/clients",
+  }
+};
 
 export default function Clients() {
   return (

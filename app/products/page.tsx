@@ -1,24 +1,33 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ImageSlider from "../../components/ImageSlider";
+
+export const metadata: Metadata = {
+  title: "Industrial Centrifuges | Manual & Bag-Lifting Top Discharge Centrifuge Machines",
+  description: "Explore ADEN's industrial centrifuge product lines: Manual Top Discharge (Stainless Steel & Rubber-Lined), Bag-Lifting Top Discharge Centrifuges, and 3-Point Suspension separation machines.",
+  keywords: [
+    "Manual Top Discharge Centrifuge",
+    "Bag-Lifting Top Discharge Centrifuge",
+    "Stainless Steel Centrifuge Machine",
+    "Rubber-Lined Centrifuge India",
+    "3-Point Suspension Centrifuge",
+    "Solid-Liquid Separation Equipment",
+    "Industrial Centrifuges Catalogue",
+    "Chemical Centrifuge Specifications",
+    "Pharmaceutical Centrifuge Machine India",
+    "Top Discharge Centrifuge Manufacturer"
+  ],
+  openGraph: {
+    title: "Industrial Centrifuges | Manual & Bag-Lifting Top Discharge Centrifuges",
+    description: "Four precision-engineered centrifuge product lines built in Ahmedabad, India for chemical, pharmaceutical, textile, and food separation duties.",
+    url: "https://www.adengineers.co.in/products",
+  }
+};
 
 export default function Products() {
   return (
     <main>
-      <section className="page-banner">
-        <div className="container">
-          <div className="breadcrumb"><Link href="/">Home</Link> / Products</div>
-          <h1>Centrifuges</h1>
-          <p style={{ maxWidth: "52ch", color: "var(--steel-light)", marginTop: "10px" }}>Four product lines, each engineered for a specific separation duty rather than sold as a generic catalogue size.</p>
-          <div className="tag-row" style={{ marginTop: "20px" }}>
-            <Link href="#manual-ss" className="tag">01 Manual SS</Link>
-            <Link href="#manual-rl" className="tag">02 Manual RL</Link>
-            <Link href="#bag-lifting-ss" className="tag">03 Bag-Lifting SS</Link>
-            <Link href="#bag-lifting-rl" className="tag">04 Bag-Lifting RL</Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="manual-ss">
+      <section id="manual-ss" style={{ paddingTop: "120px" }}>
         <div className="container">
           <div className="eyebrow reveal">Product 01 · Basket Centrifuge</div>
           <div className="datasheet reveal">

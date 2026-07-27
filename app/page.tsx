@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ImageSlider from "../components/ImageSlider";
 import HeroSlider from "../components/HeroSlider";
 import ClientLogo from "../components/ClientLogo";
+
+export const metadata: Metadata = {
+  title: "Industrial Centrifuges & Process Pumps Manufacturer India | Solid-Liquid Separation",
+  description: "ADEN designs and manufactures solid-liquid separation equipment, manual top discharge centrifuges, bag-lifting centrifuges, and process pumps in Ahmedabad, India since 1990.",
+  keywords: ["Industrial Centrifuges India", "Solid-Liquid Separation Equipment", "Manual Top Discharge Centrifuge", "Bag-Lifting Top Discharge Centrifuge", "Chemical Centrifuge India", "Pharmaceutical Centrifuge Manufacturer", "Process Pumps Ahmedabad", "ADEN Centrifuges"],
+  openGraph: {
+    title: "Industrial Centrifuges & Process Pumps Manufacturer India | ADEN",
+    description: "Solid-liquid separation equipment built for continuous industrial duty. Over 7,000 centrifuges and pumps delivered across 15+ countries.",
+    url: "https://www.adengineers.co.in",
+  }
+};
 
 export default function Home() {
   return (
@@ -338,9 +350,9 @@ export default function Home() {
           <div style={{ border: "1px solid rgba(255, 255, 255, 0.15)", borderRadius: "4px", overflow: "hidden", height: "360px", width: "100%" }}>
             <iframe
               title="ADEN, Naroda GIDC, Ahmedabad"
-              src="https://www.google.com/maps?q=G.I.D.C.+Naroda,+Ahmedabad,+Gujarat+382330&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3670.2784465614277!2d72.66762157531576!3d23.086900679128718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDA1JzEyLjgiTiA3MsKwNDAnMTIuNyJF!5e0!3m2!1sen!2sin!4v1785147293536!5m2!1sen!2sin"
               width="100%" height="100%" style={{ border: 0, display: "block" }}
-              loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+              allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin">
             </iframe>
           </div>
         </div>

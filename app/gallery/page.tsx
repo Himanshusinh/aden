@@ -1,19 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Centrifuge Manufacturing Gallery | Factory Floor & Equipment Photos",
+  description: "View photos of ADEN industrial centrifuges in production, stainless steel & rubber-lined machines ready for dispatch from our Naroda, Ahmedabad manufacturing facility.",
+  keywords: [
+    "Industrial Centrifuge Gallery",
+    "Centrifuge Manufacturing Plant Photos",
+    "Stainless Steel Centrifuge Pictures",
+    "Rubber-Lined Centrifuge Photos",
+    "ADEN Factory Ahmedabad",
+    "Solid-Liquid Separation Equipment Gallery",
+    "Top Discharge Centrifuge Images",
+    "Chemical Equipment Exporter Photos"
+  ],
+  openGraph: {
+    title: "Centrifuge Manufacturing Gallery | ADEN Works Ahmedabad",
+    description: "Centrifuges in production, on customer plant floors, and ready for dispatch from our Naroda, Ahmedabad works.",
+    url: "https://www.adengineers.co.in/gallery",
+  }
+};
 
 export default function Gallery() {
   return (
     <main>
-      <section className="page-banner">
-        <div className="container">
-          <div className="breadcrumb"><Link href="/">Home</Link> / Gallery</div>
-          <h1>Gallery</h1>
-          <p style={{ maxWidth: "56ch", color: "var(--steel-light)", marginTop: "10px" }}>
-            Centrifuges in production, on customer plant floors, and ready for dispatch — from our Naroda, Ahmedabad works.
-          </p>
-        </div>
-      </section>
-
-      <section>
+      <section style={{ paddingTop: "120px" }}>
         <div className="container">
           <div className="section-head reveal">
             <h2>From the works floor</h2>

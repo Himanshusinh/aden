@@ -1,4 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Quality & Certifications | Dynamic Balancing & GMP Compliant Centrifuges",
+  description: "ADEN ensures rigorous quality control: 100% dynamic balancing, dye penetrant weld inspection, raw material metallurgy checks, and GMP compliant stainless steel construction.",
+  keywords: [
+    "GMP Compliant Centrifuge",
+    "ISO 9001 Centrifuge Manufacturer",
+    "Dynamic Balancing Centrifuge India",
+    "Stainless Steel Metallurgy Inspection",
+    "Flameproof Centrifuge Motor",
+    "ATEX Centrifuge Compliance",
+    "Chemical Equipment Quality Control",
+    "Solid-Liquid Separation Certifications"
+  ],
+  openGraph: {
+    title: "Quality & Certifications | ADEN Manufacturing Standards",
+    description: "Material checks, build inspection and pre-dispatch dynamic testing on every centrifuge unit that leaves our works.",
+    url: "https://www.adengineers.co.in/certifications",
+  }
+};
 
 export default function Certifications() {
   return (

@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions | Equipment Warranty & Website Usage",
+  description: "Read ADEN's terms and conditions regarding industrial centrifuge datasheets, equipment specifications, warranty policies, and intellectual property.",
+  keywords: ["ADEN Terms and Conditions", "Centrifuge Warranty Terms", "Industrial Equipment Sale Terms"],
+  robots: { index: false, follow: true }
+};
 
 export default function Terms() {
   return (

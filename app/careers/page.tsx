@@ -1,4 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Careers at ADEN | Mechanical & Centrifuge Design Engineering Jobs Ahmedabad",
+  description: "Join ADEN's engineering and manufacturing team in Naroda, Ahmedabad. Opportunities for mechanical design engineers, production supervisors, and QC inspectors.",
+  keywords: [
+    "Mechanical Engineering Jobs Ahmedabad",
+    "Centrifuge Design Engineer Careers",
+    "Industrial Equipment Manufacturing Jobs Gujarat",
+    "Production Engineer Jobs Naroda GIDC",
+    "ADEN Careers",
+    "Chemical Equipment Sales Engineer Jobs"
+  ],
+  openGraph: {
+    title: "Careers at ADEN | Mechanical & Centrifuge Design Jobs",
+    description: "Build industrial separation equipment engineered for continuous 24/7 duty. Explore careers with our senior engineering team in Ahmedabad.",
+    url: "https://www.adengineers.co.in/careers",
+  }
+};
 
 export default function Careers() {
   return (

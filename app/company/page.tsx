@@ -1,16 +1,31 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About ADEN | 30+ Years of Separation Engineering Heritage in Ahmedabad",
+  description: "Learn about ADEN (A.D.Engineers), Ahmedabad's premier manufacturer of solid-liquid separation centrifuges and process pumps with 7,000+ units delivered globally since 1990.",
+  keywords: [
+    "About ADEN",
+    "A.D.Engineers Ahmedabad",
+    "Centrifuge Manufacturer Ahmedabad",
+    "Separation Engineering India",
+    "Solid-Liquid Separation Heritage",
+    "Industrial Centrifuge Exporter India",
+    "Process Pump Manufacturer Gujarat",
+    "Chemical Centrifuge Supplier",
+    "Naroda GIDC Centrifuge Manufacturer"
+  ],
+  openGraph: {
+    title: "About ADEN | 30+ Years of Separation Engineering Heritage",
+    description: "Delivering over 7,000 industrial centrifuges and process pumps to chemical, pharma, and textile plants across 15+ countries since 1990.",
+    url: "https://www.adengineers.co.in/company",
+  }
+};
 
 export default function Company() {
   return (
     <main>
-      <section className="page-banner">
-        <div className="container">
-          <div className="breadcrumb"><Link href="/">Home</Link> / Company</div>
-          <h1>Our Commitment — Your Success</h1>
-        </div>
-      </section>
-
-      <section>
+      <section style={{ paddingTop: "120px" }}>
         <div className="container two-col">
           <div className="reveal">
             <div className="eyebrow">Who we are</div>
